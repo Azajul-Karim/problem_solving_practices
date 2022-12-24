@@ -20,3 +20,15 @@ function moduleTwo(arr) {
 }
 
 testModule("moduleTwo", moduleTwo([10, 15, 30, 40, 50]), [50, 40, 30, 15, 10]);
+
+// 3 Write a function that checks whether an element occurs in a list
+// function modulrThree(arr) {}
+
+// 4 Write a function that returns the elements on odd positions in a list.
+function moduleFour(arr) {
+  let arrFilter = arr.filter((list) => {
+    return list % 2 === 1;
+  });
+  return arrFilter;
+}
+testModule("moduleFour", moduleFour([10, 15, 30, 40, 25, 50]), [15, 25]);
