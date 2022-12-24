@@ -32,3 +32,13 @@ function moduleFour(arr) {
   return arrFilter;
 }
 testModule("moduleFour", moduleFour([10, 15, 30, 40, 25, 50]), [15, 25]);
+
+// 5 Write a function that computes the running total of a list.
+
+function moduleFive(arr) {
+  return arr.reduce((a, b) => {
+    return a + b;
+  }, 0);
+}
+
+testModule("moduleFive", moduleFive([10, 15, 30, 40, 50]), 145);
