@@ -76,3 +76,37 @@ function moduleNine(arr1, arr2) {
   return arrConcat;
 }
 testModule("moduleNine", moduleNine(["a", "b"], [1, 2]), ["a", "b", 1, 2]);
+
+// 10 Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+// function moduleTen(arr1, arr2) {}
+// testModule("moduleTen", moduleTen(["a", "b"], [1, 2]), ["a", 1, "b", 2]);
+
+// 11 Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6]. You can do this quicker than concatenating them followed by a sort.
+function moduleEleven(arr1, arr2) {
+  let arrConcat = arr1.concat(arr2).sort();
+  return arrConcat;
+}
+testModule("moduleEleven", moduleEleven([1, 4], [2, 3, 5]), [1, 2, 3, 4, 5]);
+
+// 12 Write a function that rotates a list by k elements. For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the list. How many swap or move operations do you need?
+
+// function moduleTwelve(arr1, arr2) {
+
+// }
+
+// 13 Write a function that computes the list of the first 100 Fibonacci numbers. The first two Fibonacci numbers are 1 and 1. The n+1-st Fibonacci number can be computed by adding the n-th and the n-1-th Fibonacci number. The first few are therefore 1, 1, 1+1=2, 1+2=3, 2+3=5, 3+5=8.
+
+// function moduleThirteen(arr1, arr2) {
+
+// }
+
+// 14 Write a function that takes a number and returns a list of its digits. So for 2342 it should return [2,3,4,2].
+function moduleFourteen(num) {
+  let convertStr = num.toString().split("");
+  let convertnumber = convertStr.map((i) => {
+    return Number(i);
+  });
+  return convertnumber;
+}
+testModule("moduleFourteen", moduleFourteen(12345), [1, 2, 3, 4, 5]);
