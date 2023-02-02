@@ -109,4 +109,4 @@ function moduleFourteen(num) {
   });
   return convertnumber;
 }
-testModule("moduleFourteen", moduleFourteen(12345), [1, 2, 3, 4, 5]);
+testModule("moduleFourteen", moduleFourteen(123456), [1, 2, 3, 4, 5, 6]);
