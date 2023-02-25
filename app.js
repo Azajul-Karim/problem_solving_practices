@@ -57,7 +57,9 @@ function moduleSix(str) {
 testModule("moduleSix", moduleSix("Malayalam"), true);
 
 // 7 Write three functions that compute the sum of the numbers in a list: using a for-loop, a while-loop and recursion. (Subject to availability of these constructs in your language of choice.)
-function moduleSeven(arr) {}
+function moduleSeven(num1, num2) {
+  return num1 + num2;
+}
 
 // 8 Write a function on_all that applies a function to every element of a list. Use it to print the first twenty perfect squares. The perfect squares can be found by multiplying each natural number with itself. The first few perfect squares are 1*1= 1, 2*2=4, 3*3=9, 4*4=16. Twelve for example is not a perfect square because there is no natural number m so that m*m=12. (This question is tricky if your programming language makes it difficult to pass functions as arguments.)
 
